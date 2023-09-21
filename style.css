@@ -1,0 +1,152 @@
+* {
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #E3B448;
+}
+
+body {
+    background-color:  #CBD18F;
+    border: solid 3px #3A6B35;
+    margin: 1% 10% 1% 10%;
+    padding: 1% 2% 2% 1%;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+h1 {
+    border-bottom: 1px solid #3A6B35;
+    margin-top: 30px;
+    font-size: 2em;
+    font-family: serif;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1em;
+    color: #3A6B35;
+    margin-top: 30px;
+}
+
+hr {
+    border: 1px solid #3A6B35;
+}
+
+footer {
+    color: grey;
+    font-size: 0.7em;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+strong {
+    color: #3A6B35;
+}
+
+.ville div {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.poste {
+    font-variant-caps: small-caps;
+    font-weight: lighter;
+}
+
+.logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+strong, em, a, span {
+    margin: 0;
+}
+
+.imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.imageContainer img {
+    height: 200px;
+    width: 200px;
+    margin: 2px 5px 2px 5px;
+    border: solid 1px #3A6B35;
+
+}
+
+.imageContainer img:hover {
+    height: 300px;
+    width: 300px;
+
+}
+
+.socialNetwork img {
+    height: 50px;
+    width: 50px;
+    margin-right: 3px;
+    margin-left: 3px;
+
+}
+
+.upper {
+    font-size: 150%; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+.link {
+    color: #3A6B35;
+}
+
+table {
+    border: 2px solid #333; 
+    border-collapse: collapse; 
+   
+}
+
+td, th {
+    border: 1px solid #333; 
+    padding: 8px; 
+}
+
+ul, ol {
+    width: 100%;
+}
+
+
+iframe {
+    width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 1%;
+        padding: 2%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .imageContainer img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin: 1% 5% 1% 5%;
+    }
+
+    .imageContainer img {
+        width: 100%;
+    }
+}
+
