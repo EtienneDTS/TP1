@@ -96,14 +96,17 @@ strong, em, a, span {
 
 }
 
-.upper {
-    font-size: 150%; 
-    font-weight: bold; 
-    text-transform: uppercase; 
+.afterH2::first-letter {
+    font-size: 2em;
 }
 
-.link {
+a:hover {
+    color: #E3B448;
+}
+
+a:visited {
     color: #3A6B35;
+
 }
 
 table {
