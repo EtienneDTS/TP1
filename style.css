@@ -8,11 +8,16 @@ html {
 }
 
 body {
-    background-color:  #CBD18F;
+    background-color: #CBD18F;
     border: solid 3px #3A6B35;
     margin: 1% 10% 1% 10%;
     padding: 1% 2% 2% 1%;
     font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+header {
+    margin: 0;
+    width: 100%;
 }
 
 main {
@@ -21,14 +26,18 @@ main {
 
 nav {
     width: 10em;
-    background-color: #E3B448;
+
 }
 
 nav ul {
     list-style: none;
     width: 100%;
-    padding: 0;
-    
+    padding-inline-start: 10px;
+    background-color: #E3B448;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
 }
 
 h1 {
@@ -51,12 +60,6 @@ hr {
     border: 1px solid #3A6B35;
 }
 
-footer {
-    color: grey;
-    font-size: 0.7em;
-    margin-bottom: 10px;
-    font-weight: lighter;
-}
 
 strong {
     color: #3A6B35;
@@ -78,7 +81,10 @@ strong {
     transform: translateX(-50%);
 }
 
-strong, em, a, span {
+strong,
+em,
+a,
+span {
     margin: 0;
 }
 
@@ -126,17 +132,18 @@ a:visited {
 }
 
 table {
-    border: 2px solid #333; 
-    border-collapse: collapse; 
-   
+    border: 2px solid #333;
+    border-collapse: collapse;
 }
 
-td, th {
-    border: 1px solid #333; 
-    padding: 8px; 
+td,
+th {
+    border: 1px solid #333;
+    padding: 8px;
 }
 
-ul, ol {
+ul,
+ol {
     width: 100%;
 }
 
@@ -145,18 +152,90 @@ iframe {
     width: 90%;
 }
 
+footer {
+    color: grey;
+    font-size: 0.7em;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    clear: both;
+}
+
+footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+footer ul li {
+    width: 60px;
+    border: solid #333 1px;
+    flex-basis: 150px;
+    padding: 10px 10px 10px 10px;
+}
+
 @media screen and (max-width: 768px) {
     body {
         margin: 1%;
         padding: 2%;
     }
+
     h1 {
         font-size: 1.5em;
     }
+
     .imageContainer img {
         height: 150px;
         width: 150px;
     }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .logo {
+        margin: 0;
+        left: 0;
+        transform: translateX(-6%);
+        height: 150px;
+        width: 330px;
+        z-index: 2;
+    }
+
+    nav {
+        position: absolute;
+        top: 10px;
+        right: 6%;
+        width: auto;
+        font-family: 'Gill Sans';
+        margin-right: 0;
+
+
+    }
+
+    nav ul {
+        list-style: none;
+        width: 100%;
+        padding-inline-start: 10px;
+        background-color: #CBD18F;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+        display: flex;
+
+
+
+    }
+
+    nav ul li {
+        width: auto;
+        max-width: 70px;
+
+
+
+    }
+
+
 }
 
 @media screen and (max-width: 425px) {
@@ -168,4 +247,3 @@ iframe {
         width: 100%;
     }
 }
-
