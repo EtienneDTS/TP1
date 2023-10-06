@@ -60,6 +60,15 @@ hr {
     border: 1px solid #3A6B35;
 }
 
+.check {
+    display: none;
+}
+
+.check.visible {
+    display: inline-block;
+}
+
+
 
 strong {
     color: #3A6B35;
@@ -174,6 +183,19 @@ footer ul li {
     padding: 10px 10px 10px 10px;
 }
 
+.booking div, .booking span {
+    margin: 0;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+}
+
+.payment {
+    display: flex;
+}
+
 @media screen and (max-width: 768px) {
     body {
         margin: 1%;
@@ -200,6 +222,52 @@ footer ul li {
         height: 150px;
         width: 330px;
         z-index: 2;
+    }
+
+    nav {
+        position: absolute;
+        top: 10px;
+        right: 6%;
+        width: auto;
+        font-family: 'Gill Sans';
+        margin-right: 0;
+
+
+    }
+
+    nav ul {
+        list-style: none;
+        width: 100%;
+        padding-inline-start: 10px;
+        background-color: #CBD18F;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+        display: flex;
+
+
+
+    }
+
+    nav ul li {
+        width: auto;
+        max-width: 70px;
+
+
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 668px) {
+    
+
+    .logo {
+        margin-top: 45px;
+        margin-bottom: 0;
+        
     }
 
     nav {
