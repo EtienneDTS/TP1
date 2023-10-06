@@ -265,42 +265,11 @@ footer ul li {
     
 
     .logo {
-        margin-top: 45px;
+        margin-top: 60px;
         margin-bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         
-    }
-
-    nav {
-        position: absolute;
-        top: 10px;
-        right: 6%;
-        width: auto;
-        font-family: 'Gill Sans';
-        margin-right: 0;
-
-
-    }
-
-    nav ul {
-        list-style: none;
-        width: 100%;
-        padding-inline-start: 10px;
-        background-color: #CBD18F;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin: 0;
-        display: flex;
-
-
-
-    }
-
-    nav ul li {
-        width: auto;
-        max-width: 70px;
-
-
-
     }
 
 
