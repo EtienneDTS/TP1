@@ -1,19 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const date = new Date();
 
-    const year = date.getFullYear();
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
-    const hour = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-
-    document.getElementById("confirmMessage").textContent = `Nous confirmons avoir bien reçu votre réservation le ${day}/${month}/${year} à ${hour}:${minutes}.`;
 
 });
 
 
 
-function testDisponibilite(id) {
+function testDisponibilite(id, submitBTN) {
     const element = document.getElementById(id);
     const destination = document.getElementById("destination");
     const checkH = document.getElementById("checkH");
@@ -41,18 +33,29 @@ function testDisponibilite(id) {
         return false;
     }
     else {
-        document.querySelector(".check").classList.add("visible");
+        if (submitBTN) {
+            const date = new Date();
+            const year = date.getFullYear();
+            const month = (date.getMonth() + 1).toString().padStart(2, '0');
+            const day = date.getDate().toString().padStart(2, '0');
+            const hour = date.getHours().toString().padStart(2, '0');
+            const minutes = date.getMinutes().toString().padStart(2, '0');
+            confirm("Souhetez-vous confirmer ?")
+            alert(`Nous confirmons avoir bien reçu votre réservation le ${day}/${month}/${year} à ${hour}:${minutes}.`) 
+            return true
+        }
+        alert("La destination est disponible");
         return true;
     }
 
 }
 
 function afficherIBAN() {
-    document.getElementById("divIBAN").style.display = "block";
+    document.getElementById("ibanContainer").style.display = "block";
 
 
 }
 
 function cacherIBAN() {
-    document.getElementById("divIBAN").style.display = "none";
+    document.getElementById("ibanContainer").style.display = "none";
 }
